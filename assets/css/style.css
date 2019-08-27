@@ -1,0 +1,499 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    overflow-x: hidden;
+    padding: 0;
+}
+
+/* Body */
+body {
+    color: rgb(114, 110, 110);
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 50;
+    line-height: 1.6;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Nav */
+.toggle-menu {
+    line-height: 70px;
+    text-align: right;
+}
+
+nav {
+    background-color: #383E4C;
+    padding: 5px;
+    position: fixed;
+    width:100%;
+}
+
+nav a {
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+a {
+    all: unset;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+li {
+    border: 1px solid lightslategrey;
+    margin: 10px;
+    padding: 8px 20px;
+    letter-spacing: 1px;
+}
+
+li:hover, li.selected {
+    background-color: #49505F;
+    cursor: pointer;
+}
+
+li, h3, button {
+    text-transform: capitalize;
+    font-size: 1.3rem;
+}
+
+/* Main */
+h1 {
+    font-size: 4.3rem;
+    font-weight: 50;
+    text-transform: uppercase;
+}
+
+button {
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    margin: 20px 70px;
+    padding: 10px 25px;
+}
+
+/* Homepage */
+.box {
+    padding: 60px 90px;
+    width: 100%;
+}
+
+.first {
+    background-attachment: fixed;
+    background-image: url("../images/First_big.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    height: 94vh;
+    line-height: 1.2;
+    margin: 0 auto;
+    padding-top: 260px;
+    text-align: center;
+    text-shadow: 2px 2px #000;
+}
+
+.first p {
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px #333;
+    text-transform: capitalize;
+}
+
+/* AboutUs */
+.home-text {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+/* top-three */
+.top-three {
+    max-width: 360px;
+}
+
+.top-three p {
+    color: rgb(114, 110, 110);
+    letter-spacing: -0.5px;
+    padding-top: 10px;
+}
+
+.top-three-text {
+    background-color: #F2F2F2;
+    margin-top: -5px;
+    padding: 20px 20px;
+}
+
+.green {
+    color: #31963F;
+}
+
+.green-button {
+    background-color: #249033;
+}
+
+.green-button:hover {
+    background-color: #4CAF50;
+}
+
+.blue {
+    color: #1686C1;
+}
+
+.blue-button {
+    background-color: #1686C1;
+}
+
+.blue-button:hover {
+    background-color: deepskyblue;
+}
+
+.gray-text {
+    color: #666666;
+}
+
+.red-button {
+    background-color: #852406;
+}
+
+.red-button:hover {
+    background-color: firebrick;
+}
+
+.top-three a {
+    color: dodgerblue;
+    text-decoration: none;
+}
+
+/* second-grid */
+.second-grid {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    margin-bottom: 30px;
+    padding: 30px 90px;
+}
+
+.second-grid button, .service-four-text button, .service-big-text button {
+    background-color: white;
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+    color: rgb(114, 110, 110);
+}
+
+.second-grid img {
+    width: 550px;
+    height: 250px;
+}
+
+.bottom-two {
+    background-color: #F2F2F2;
+    color: rgb(114, 110, 110);
+    max-width: 550px;
+}
+
+.bottom-two h3 {
+    padding: 10px;
+    text-align: center;
+}
+
+.bottom-two p {
+    padding: 20px;
+}
+
+.bottom-two button {
+    margin-left: 320px;
+}
+
+/* services */
+.second {
+    background-attachment: fixed;
+    background-image: url("../images/mountain_scroll.jpg");
+    background-position: center;
+    background-size: cover;
+    color: white;
+    height: 50vh;
+    text-align: center;
+    text-shadow: 1px 1px 1px #2c2a2a;
+}
+
+.second h2 {
+    font-size: 2.5rem;
+    font-weight: 50;
+    text-transform: capitalize;
+}
+
+.second p {
+    font-size: 1.2rem;
+    max-width: 720px;
+    margin: 0 auto;
+    padding-top: 15px;
+}
+
+/* service-text */
+.service-text {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+/* service-four */
+.service-four {
+    max-width: 260px;
+}
+
+.service-four p {
+    letter-spacing: -0.5px;
+    padding-top: 10px;
+    text-align: left;
+}
+
+.service-four-text {
+    background-color: #F2F2F2;
+    color: rgb(114, 110, 110);
+    height: 260px;
+    margin-top: -5px;
+    padding: 20px;
+    text-align: center;
+}
+
+.service-four-text button {
+    margin: 20px 30px 10px 30px;
+}
+
+.service-big-grid {
+    display: grid;
+    /* grid-template-columns: 1fr; */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    text-align: center;
+    padding: 0px 90px 60px;
+}
+
+.service-big-text {
+    background-color: #F2F2F2;
+    color: rgb(114, 110, 110);
+    text-align: left;
+}
+
+.service-big-text img {
+    width: 100%;
+}
+
+.service-big-text p {
+    letter-spacing: -0.3px;
+    margin: 10px;
+}
+
+.service-big-text h3 {
+    margin-top: 40px;
+    margin-left: 10px;
+}
+
+/* Contact */
+.third {
+    background-attachment: fixed;
+    background-image: url("../images/road_big.jpg");
+    background-position: center;
+    background-size: cover;
+    color: black;
+    height: 88vh;
+    text-align: center;
+}
+
+.third h2 {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 200;
+    margin: 20px 0;
+    text-shadow: 1px 1px 2px #2c2a2a;
+    text-transform: capitalize;
+}
+
+.third p {
+    margin: 20px auto;
+    max-width: 720px;
+    padding: 20px 50px;
+}
+
+.form-input {
+    background: rgba(242, 242, 242, 0.3);
+    border-radius: 5px;
+    padding: 6px 12px;
+    width: 100%;
+}
+
+.form-box {
+    max-width: 720px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.form-input-text {
+    width: 100%;
+}
+
+form {
+    margin-right: 30px;
+}
+
+.textarea-content {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 0.95rem;
+    height: 60%;
+}
+
+input {
+    border: none;
+    height: 34px;
+    margin: 0px 100px 12px 0px;
+    width: 100%;
+}
+
+::placeholder {
+    color: black;
+}
+
+.send-button {
+    background: #2c2a2a;
+    border:1px solid #ccc;
+    border-radius: 10px; 
+    color: white;
+    float: left;
+    margin: 5px auto;
+}
+
+/* Footer */
+footer {
+    color: rgb(134, 129, 129);
+    margin: 0 auto;
+    text-align: center;
+}
+
+.footer-text h3 {
+    font-size: 2rem;
+    font-style: italic;
+    font-weight: 50;
+    margin-top: 30px;
+    text-transform: none;
+}
+
+.footer-text p {
+    color: rgb(143, 142, 142);
+    font-style: italic;
+    margin: 20px;
+}
+
+.circle-button {
+    background: none;
+    bottom: 0;
+    border: none;
+    color: rgb(75, 68, 68);
+    cursor: pointer;
+    font-size: 2.5rem;
+    position: fixed;
+    right: 0;
+    margin-right: 20px;
+}
+
+hr {
+    border: 0.5px solid rgb(235, 232, 232);
+    margin-top: 30px;
+    width: 100%; 
+}
+
+.copyright-text p {
+    color: rgb(143, 142, 142);
+    font-size: 0.8rem;
+    margin: 30px;
+}
+
+.copyright-text a {
+    color: rgb(121, 62, 62) !important;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/* Media queries */
+@media only screen and (max-width: 1024px) {
+    .first {
+        background-position: bottom left;
+        height: 50vh;
+    }
+
+    .bottom-two button {
+        margin-left: 70px;
+    }
+
+    .second {
+        height: 30vh;
+    }
+
+    .third {
+        height: 50vh;
+    }
+}
+
+@media only screen and (max-width: 500px) {    
+    body {
+        font-size: 1rem;
+        margin: 0;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 2px;
+    }
+
+    .box {
+        padding: 20px;
+    }
+
+    .second-grid, .service-big-grid {
+        padding: 20px;
+    }
+
+    .bottom-two button {
+        margin-left: 70px;
+    }
+
+    .first {
+        background-position: bottom left;
+        height: 60vh;
+        padding-top: 220px;
+    }
+
+    .first p {
+        font-size: 1.1rem;
+    }
+
+    .second {
+        height: 40vh;
+    }
+
+    .second-grid img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .third {
+        height: 80vh;
+    }
+}
